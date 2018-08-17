@@ -1,0 +1,15 @@
+// ingresa dos numeros y se identifica cual es el mayor
+// Si ingresa dos numeros iguales los identifica como iguales 
+#include <iostream>
+#include <string>
+
+int main()
+{
+  std::string texto1;
+  int entero1, entero2, salida;
+  std::cout << "por favor ingrese dos numeros enteros separados por un espacio \n";
+  std::cin >> entero1 >> entero2;
+  entero1 > entero2 ? salida = entero1: entero1 == entero2 ? salida = entero2: salida = entero2;
+  entero1 == entero2 ? texto1="Los numeros son iguales a ": texto1="El numero Mayor es el ";
+  std::cout << texto1 << salida << "\n";
+}
