@@ -1,0 +1,14 @@
+// recibe tres palabras, oraciones, parrafos y retorna el primero de Alfabeticamente
+#include <iostream>
+#include <string>
+
+int main()
+{
+  std::string a,b,c,s;
+  std::cout<< "Por favor ingrese tres palabras, oraciones o parrafos y separelos por un Enter\n";
+  getline (std::cin, a);
+  getline (std::cin, b);
+  getline (std::cin, c);
+  a < b ? (a < c ? s = a:s=c):(b<c ?s = b:s=c);
+  std::cout<< "En orden ascendente de A a Z el primer texto es:  "<< s;
+}
