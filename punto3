@@ -1,0 +1,13 @@
+// Evalua un numero entero e indica si es el numero ingresado es cero, par o impar
+#include <iostream>
+#include <string>
+
+int main()
+{
+  int numero1;
+  std::cout<< "Por favor ingrese un numero entero \n";
+  std::cin>>numero1;
+  std::string salida;
+  numero1 == 0 ? salida = "El numero ingresado es 0":numero1 %2 ?  salida= "El numero ingresado es impar": salida = "El numero ingresado es par";
+ std::cout<< salida;
+}
