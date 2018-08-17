@@ -1,0 +1,15 @@
+// demuestra que al convertir de float a int se pierde inf. pero no al pasar de int a float.
+#include <iostream>
+
+int main()
+{
+  int a(157476),b;
+  float c(1234.5),d;
+  //+++++++++++++++++++++++++++++++++++++
+  b = c; //Convercion Implicita
+  //+++++++++++++++++++++++++++++++++++++
+  d = float(a); //Convercion Explicita
+  //+++++++++++++++++++++++++++++++++++++
+  std::cout<< c << " --> " << b <<"  |Float a Int se pierde los decimales\n";
+  std::cout<< a << " --> " << d <<"  |Int a Float no se pierde informacion\n";
+}
