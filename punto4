@@ -1,0 +1,21 @@
+// recibe un numero de 5 cifras y entrega cada cifra separada por 3 espacios
+#include <iostream>
+#include <string>
+
+int main()
+{
+  char U, D, C, M, DM;
+  std::string cadena("");
+  std::cout<< "Por favor ingrese un numero entero de 5 cifras \n";
+  std::cin>> DM >> M >> C >> D >> U;
+  cadena = DM;
+  cadena += "   ";
+  cadena += M;
+  cadena += "   ";
+  cadena += C;
+  cadena += "   ";
+  cadena += D;
+  cadena += "   ";
+  cadena += U;
+  std::cout<<cadena;
+}
